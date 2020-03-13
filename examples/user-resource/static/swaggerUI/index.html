@@ -37,7 +37,7 @@
     window.onload = function () {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "http://localhost:8080/apidocs.json",
+        url: "http://" + window.location.hostname + ":" + window.location.port + "/apidocs.json",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
